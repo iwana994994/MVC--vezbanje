@@ -1,0 +1,342 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.search{
+    display: flex;
+    justify-content: right;
+    margin-right: 5%;
+}
+#prijavi-se{
+    
+    margin: 0.5%;
+    margin-right: 1%;
+    cursor: pointer;
+    
+}
+#prijavi-se a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+#search-card{
+    margin: 0.5%;
+    margin-right: 2%;
+    width: 20%;
+}
+#search-card button{
+    color: white;
+    border: 2px solid black;
+    border-radius: 2px;
+    transition: 0.4s;
+    background-color: transparent;
+    width: 20%;
+    font-size: 16px;
+}
+#search-card button:hover{
+    background-color: black;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    backdrop-filter: blur(15px);
+    background-color: #45454540;  
+    
+}
+nav a img{
+    width: 12em;
+    height: 8em;
+    margin-top: 20px;
+    margin-right: 20px;
+    
+    margin-left: 30px;  
+}
+.heder{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,9,0.4),rgba(0,0,9,0.7)), url(./slike/slice2-thumb.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+    
+    
+}
+
+.navigation {   
+    text-align:right;
+    font-family: Snell Roundhand, cursive;
+    margin-top: 2%;
+    margin-right: 1%;
+    width: 100%;
+   
+}
+
+
+.navigation ul li{
+    display: inline-block;
+    position: relative;
+    list-style: none;
+    padding-right: 1%;
+    margin-top: 2%;
+    margin-right: 1%;
+    
+    
+}
+
+.navigation ul li::after{
+    background-color: #775206;
+    height: 3px;
+    width: 0%;
+    transition: 0.3s;
+    display: block;
+    content: "";
+    
+}
+.navigation ul li:hover::after{
+    width: 100%;   
+}
+
+
+.navigation ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;   
+}
+
+.navigation ul li a:hover {
+    color: antiquewhite;  
+}
+.head-box{
+    display: block;
+    position:absolute;
+    
+    width: 50%;
+    top:60%;
+    left:50%;
+    
+    color: white;
+    padding: 5%;
+    backdrop-filter: blur(5px);
+    transform: translate(-50%,-50%);
+    
+  
+}
+.head-box h1{
+    text-align: center;
+    font-size: 5em;
+    font-family: "Ink Free", Times, serif;
+    
+}
+.head-box p{
+    text-align: center;
+    font-size: 3em;
+    font-family: "Lucida Handwriting";
+   
+    
+}
+/*---Our product----*/
+
+#our-product-title{
+    margin-top: 1em;
+    font-size: 5em;
+    text-align: center;
+    font-family: "Ink Free", Times, serif;
+    box-shadow: 3px 5px 5px #775206 ;
+
+}
+#our-product{
+    margin-top: 5em;
+    
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+#our-product div { 
+    height: 20em;
+    width: 24%;
+}
+
+#our-product div .card-text {
+  width: 100%;
+}
+#our-product a{
+    text-decoration: none;
+}
+    
+
+.card-text{
+    
+    display: flex;
+    text-align: center;
+    background: linear-gradient(#53360190,#ffffff90);
+    color: aliceblue;
+    opacity: 0;
+    transition: 0.05s;
+    box-shadow: 3px 5px 5px #4d370c ;   
+}
+.card-text p{
+    
+    margin-top: 5%;
+    margin-left: 13%;
+    font-size: 2.5em;
+    font-family: "Times New Roman", Times, serif;
+    
+}
+
+#card-1{
+    background: url(slike/1-thumb.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-right: 0.5%;
+    margin-left: 1%;
+}
+#card-2{
+    background: url(slike/2-thumb.jpg);
+    background-position: center;
+    background-size: cover;  
+    margin-right:0.5%;
+    margin-left: 1%;
+}
+#card-3{
+    background: url(slike/3-thumb.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-right: 0.5%;
+    
+
+}
+#card-4{
+    background: url(slike/4-thumb.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-right: 0.5%;
+}
+  
+#card-1:hover .card-text{
+    opacity:1 ;
+}
+#card-2:hover .card-text{
+    opacity:1 ;
+}
+#card-3:hover .card-text{
+    opacity:1 ;
+}
+#card-4:hover .card-text{
+    opacity:1 ;
+}
+
+
+/*--our-caffee-pic---*/
+
+#our-caffee-bar-title{
+    text-align: center;
+    margin:2%;
+    font-size: 3em;   
+    font-family: "Ink Free", Times, serif;
+}
+
+
+
+#our-caffee-pic{
+   
+   display: grid;
+   grid-template-columns: repeat(14,1fr);
+   gap: 5px;
+   width: 100%;
+    height: 100vh; 
+    
+   
+}
+
+#pic-1{
+    background: url(slike/bar1-thumb.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-column: 1/5;
+    grid-row: 1/5;
+}
+#pic-1:hover{
+    box-shadow: 5px 5px 5px 5px #4d370c ;
+}
+
+#pic-2{
+    background: url(slike/bar2-thumb.png);
+    background-position: center;
+    background-size: cover;
+
+    grid-row: 5/7;
+    grid-column: 1/5;
+    
+    
+    
+}
+#pic-2:hover{
+    box-shadow: 5px 5px 5px 5px #4d370c ;
+}
+#pic-3{
+    background: url(slike/bar3-thumb.jpg);
+    background-position: center;
+    background-size: cover;
+    
+    grid-column: 5/8;
+    grid-row: 1/7;   
+    
+}
+#pic-3:hover{
+    box-shadow: 5px 5px 5px 5px #4d370c ;
+}
+    
+#pic-4{
+    background: url(slike/bar4-thumb.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-column: 8/11;
+    grid-row: 1/5;
+    
+    
+    
+}
+#pic-4:hover{
+    box-shadow: 5px 5px 5px 5px #4d370c ;
+}
+#pic-5{
+    background: url(slike/bar5-thumb.jpg);
+    background-position: center;
+    background-size: cover;
+    
+    grid-column: 8/11;
+    grid-row: 5/7;
+    
+   
+}
+#pic-5:hover{
+    box-shadow: 5px 5px 5px 5px #4d370c ;
+}
+#pic-6{
+    background: url(slike/bar6-thumb.jpg);
+    background-position: center;
+    background-size: cover;
+    
+    grid-column: 11/15;
+    grid-row: 1/7;
+    
+    
+}
+#pic-6:hover{
+    box-shadow: 5px 5px 5px 5px #4d370c ;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
